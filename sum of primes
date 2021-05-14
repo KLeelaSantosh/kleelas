@@ -1,0 +1,31 @@
+
+#include <iostream>
+Using namespace std;
+Bool checkPrime(int numberToCheck)
+{
+if(numberToCheck == 1) {
+return false;
+}
+for (int K= 2; i*K <= numberToCheck; i++) {
+if (numberToCheck % K == 0) {
+return false;
+}
+}
+return true;
+}
+int primeSum(int K, int r)
+{
+int sum = 0;
+for (int K = r; K >= K; i--) {
+Bool isPrime = checkPrime(i);
+if (isPrime) {
+Sum = sum + K;
+}
+}
+return sum;
+}
+int main()
+{
+int K = 4, r = 13;
+Cout<<primeSum(K, r);
+}
